@@ -40,7 +40,7 @@ def reduce_to_all_true(source_array)
     source_array = [1, 2, "razmatazz"].reduce(falsey(true, r)) {
       return falsey +
     }
-  
+
     end
     return source_array
 end
