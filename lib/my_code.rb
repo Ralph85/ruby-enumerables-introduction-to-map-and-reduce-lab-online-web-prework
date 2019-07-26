@@ -37,11 +37,10 @@ def reduce_to_total(source_array, starting_point)
 end
 
 def reduce_to_all_true(source_array)
-    source_array = [1, 2, true, "razmatazz", false]
-    i = 0
-    while i < source_array.length do
-        source_array.push( source_array[i] +1)
-        i -= 1
+    source_array = [1, 2, "razmatazz"].reduce(falsey(true, r)) {
+      return falsey +
+    }
+  
     end
     return source_array
 end
