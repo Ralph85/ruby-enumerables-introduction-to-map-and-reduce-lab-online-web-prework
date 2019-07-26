@@ -23,7 +23,7 @@ def map_to_double(source_array)
 end
 
 def map_to_square(source_array)
-  new = []
+  new = [6]
   i = 0
   while i < source_array.length do
     new.push( source_array[i] * source_array[i] )
